@@ -1,0 +1,155 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Julius Sans One', sans-serif;
+        background: rgba(255,255,255,1);
+        background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(233,204,147,1) 100%);
+        background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(233,204,147,1)));
+        background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(233,204,147,1) 100%);
+        background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(233,204,147,1) 100%);
+        background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(233,204,147,1) 100%);
+        background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(233,204,147,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e9cc93', GradientType=1 );
+    }
+    a,
+    a:hover,
+    a:active,
+    a:visited
+     {
+        color: #0000ff;
+        font-style: none;
+        text-decoration: none;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        line-height: 1.2em;
+        color: #a68749;
+        text-shadow: 3px 3px 10px #fff;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2.5em;
+        line-height: .5em;
+        color: #a68749;
+        margin-bottom: 50px;
+        text-shadow: 3px 3px 10px #fff;
+    }
+
+    input {
+        display: block;
+        font-size: 1.7em;
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        padding: 8px;
+        font-family: 'Julius Sans One', sans-serif;
+    }
+
+    button {
+        border: 0;
+        padding: 9px 20px;
+        float: right;
+        margin: 30px 0 0 0;
+        border-radius: 4px;
+        font-size: 14px;
+        background: rgba(255,255,255,1);
+        background: -moz-linear-gradient(45deg, rgba(255,239,206,1) 0%, rgba(255,227,171,1) 100%);
+        background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,239,206,1)), color-stop(100%, rgba(255,227,171,1)));
+        background: -webkit-linear-gradient(45deg, rgba(255,239,206,1) 0%, rgba(255,227,171,1) 100%);
+        background: -o-linear-gradient(45deg, rgba(255,239,206,1) 0%, rgba(255,227,171,1) 100%);
+        background: -ms-linear-gradient(45deg, rgba(255,239,206,1) 0%, rgba(255,227,171,1) 100%);
+        background: linear-gradient(45deg, rgba(255,239,206,1) 0%, rgba(255,227,171,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e9cc93', GradientType=1 );
+        box-shadow: 0px 20px 35px rgba(0,0,0,0.1);
+    }
+
+    #page {
+        width: 1000px;
+        margin: 50px auto 10px;
+    }
+
+    .seatSearch {
+        width: 500px;
+        margin: 0 auto 30px;
+    }
+    .guestList {
+        border-radius: 14px;
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: 0px 20px 35px rgba(0,0,0,0.1);
+    }
+
+    .guestList table {
+        width: 100%;
+    }
+    .guestList a:after {
+        content: "";
+        margin-left: 5px;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        border-left: 4px solid #0000ff;
+    }
+    .guestList th {
+        padding: 10px;
+        font-weight: 800;
+        font-style: italic;
+        background-color: #ffe3ab;
+    }
+    .guestList th:first-child {
+        text-align: left;
+        border-top-left-radius: 5px;
+    }
+    .guestList th:last-child {
+        border-top-right-radius: 5px;
+    }
+    .guestList tr:nth-child(odd){  }
+    .guestList tr:nth-child(even){ background-color: rgba(255,255,255,0.5); }
+    .guestList td{
+        vertical-align:middle;
+        text-align:left;
+        padding:10px;
+        font-size:16px;
+        font-weight:normal;
+        color:#2d2d2d;
+    }
+    .guestList tr:last-child td{
+    }
+    .guestList tr td:last-child{
+        text-align: center;
+    }
+    .guestList tr:last-child td:last-child{
+    }
+    .guestList thead tr:first-child td{
+        background-color:#e9cc93;
+        text-align:center;
+        font-size:16px;
+        font-family:Arial;
+        font-weight:bold;
+        color:#ffffff;
+    }
+    .tableInfo {
+        text-align: left;
+    }
+    .tableList {
+        width: 50%;
+        float: left;
+    }
+    .tableList li {
+        list-style: none;
+    }
+    .tableDetails {
+        width: 50%;
+        min-height: 400px;
+        float: right;
+        background-color: #ccc;
+    }
