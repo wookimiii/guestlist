@@ -71,17 +71,17 @@
     }
 
     #page {
-        width: 1000px;
+        width: 60%;
         margin: 50px auto 10px;
     }
 
     .seatSearch {
-        width: 500px;
+        width: 100%;
         margin: 0 auto 30px;
     }
     .guestList {
         border-radius: 14px;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         box-shadow: 0px 20px 35px rgba(0,0,0,0.1);
     }
