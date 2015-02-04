@@ -10,7 +10,6 @@ function renderGuests(guests) {
 $(function () {
     renderGuests(GUESTS);
     $("#search").on('keyup', function handleSearch(e) {
-        console.log(e);
         var term = $(e.currentTarget).val();
         var filteredGuests = searchName(GUESTS, term);
         renderGuests(filteredGuests);
@@ -18,12 +17,12 @@ $(function () {
 });
 
 function searchName(guests, term) {
-    term = term.toLowerCase();
+    term = term.toLowerCase().replace(" ", ".+");
     console.log(term);
+    var regTerm = new RegExp(term, "i");
+
     function predicate (guest) {
-        console.log(guest.name);
-        var cond = guest.name.toLowerCase().indexOf(term) > -1;
-        console.log(cond);
+        var cond = guest.name.toLowerCase().match(regTerm);
         return cond;
     }
     return _.filter(guests, predicate);
