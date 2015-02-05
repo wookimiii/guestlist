@@ -14,13 +14,13 @@ for (var i = 0; i < rows.length; i++) {
         tableNums = cells;
     } else {
         for (var j = 0; j < cells.length; j ++) {
-            name = cells[j];
-            if (guests[name]) {
+            name = cells[j].trim();
+            if (name.length && guests[name]) {
                 guests[name].count++;
             } else {
                 guests[name] = {
                     name: cells[j],
-                    table: tableNums[j],
+                    table: tableNums[j].replace("Table", "").trim(),
                     count: 1
                 };
             }
@@ -28,4 +28,9 @@ for (var i = 0; i < rows.length; i++) {
     }
 }
 
-console.log(_.values(guests));
+guests = _.sortBy(_.values(guests), function (a) {
+    return parseInt(a.table);
+});
+
+console.log("var GUESTS = ");
+console.log(guests);
