@@ -27,16 +27,12 @@
 
     h1 {
         text-align: center;
-        font-size: 3em;
-        line-height: 1.2em;
         color: #a68749;
         text-shadow: 3px 3px 10px #fff;
     }
 
     h2 {
         text-align: center;
-        font-size: 2.5em;
-        line-height: .5em;
         color: #a68749;
         margin-bottom: 50px;
         text-shadow: 3px 3px 10px #fff;
